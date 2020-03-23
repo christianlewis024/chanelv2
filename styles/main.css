@@ -1,6 +1,6 @@
 /* ******** FONT FAMILIES *********** */
 /* font-family: 'Baloo Tamma 2', cursive;
-font-family: 'Shadows Into Light', cursive;
+font-family: 'Shadows Into Light Two', cursive;
 font-family: 'Acme', sans-serif;
 font-family: 'Handlee', cursive; */
 /* ******** FONT FAMILIES *********** */
@@ -8,46 +8,42 @@ font-family: 'Handlee', cursive; */
 body {
   align-self: center;
 }
-header {
-  border: 1px black solid;
-  display: flex;
-  width: 80%;
-  justify-content: space-evenly;
-  margin-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
 
 header img {
   width: 6%;
 }
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
 
 /*  Nav styling here */
-nav {
-  margin-top: 1%;
+/* nav { */
+/* margin-top: 1%;
   background-color: white;
   color: black;
-}
+} */
+
 nav a {
   width: -1;
   padding: 2em;
   font-size: 22px;
 }
 a:link {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:visited {
-  color: black;
+  color: white;
 }
 
 a:hover {
-  color: black;
+  color: white;
 }
 
 a:active {
-  color: black;
+  color: white;
 }
 #introSection {
   display: flex;
@@ -56,12 +52,19 @@ a:active {
   margin-left: 10%;
 }
 .englishIntro {
-  border: 1px black solid;
+  color: white;
   padding: 1%;
+  width: 50%;
 }
-.espanolIntro {
-  padding: 1%;
-  border: 1px black solid;
+.englishIntro h2 {
+  font-family: "Shadows Into Light Two", cursive;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+}
+.englishIntro p {
+  font-family: "Acme", sans-serif;
+  letter-spacing: 0.1em;
+  line-height: 2.5em;
 }
 
 #introSection div {
@@ -72,112 +75,476 @@ a:active {
   margin: 5%;
 }
 
-footer {
+.bottomLinks {
   display: flex;
-
+  flex-direction: row;
   padding: 1%;
   justify-content: space-evenly;
   margin-top: 10%;
   margin-bottom: 2%;
 }
-footer a {
+.bottomLinks a {
+  background-image: url(/img/electrothing.jfif);
   font-size: 24px;
-  border: rgb(0, 0, 0) solid 1px;
+  border: white solid 1px;
 
   padding: 10px;
-  color: black;
+  color: white;
   border-radius: 10px;
   padding-bottom: 15x;
   padding-top: 10px;
   padding: 20px;
   text-decoration: none;
 }
-
-.blogSection {
-  border: black solid 1px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 70%;
-  padding: 3%;
-  margin-left: 12%;
-}
-.sampleOne,
-.sampleTwo,
-.sampleThree {
-  border: 1px solid black;
-  margin-top: 2%;
+.collapsible-header {
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  font-family: "Handlee", cursive;
 }
 
 /* *************** CLASSES PAGE  */
+.classesPage {
+  background-image: url(/img/classbgpencilsorange.jfif);
+}
 .classBoxes {
   display: flex;
-  background: lightgray;
+  justify-content: space-around;
   width: 80%;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-top: 10%;
+  margin: 0 auto;
+  margin-top: 2%;
 }
 .sixBox,
 .sixBox a {
-  background: red;
   color: white;
+}
+.sixBox {
+  background-image: url(/img/globe2.jfif);
+  background-size: cover;
+  border-radius: 10px;
+  min-width: 25%;
+}
+.sixspan {
+  font-size: 40px;
 }
 .sevenBox,
 .sevenBox a {
-  background: yellow;
-  color: black;
+  color: white;
+}
+.sevenspan {
+  font-size: 40px;
+}
+.sevenBox {
+  background-image: url(../img/7thgra1.jfif);
+  background-size: cover;
+  border-radius: 10px;
+  min-width: 25%;
 }
 .eightBox,
 .eightBox a {
-  background: green;
   color: white;
 }
+.eightspan {
+  font-size: 40px;
+}
+.eightBox {
+  background-image: url(/img/8THGRADf.jfif);
+  background-size: cover;
+  border-radius: 10px;
+  min-width: 25%;
+}
+
 .mesaBox,
 .mesaBox a {
-  background: blue;
   color: white;
+  font-size: x-large;
+}
+.mesaBox {
+  background-image: url(/img/newmesa.jfif);
+  background-repeat: no-repeat;
+  margin-left: 60%;
+  flex-grow: 2;
+  border-radius: 10px;
+  min-width: 35%;
+}
+
+.mesaSpan {
+  font-size: 40px;
 }
 .runningBox,
 .runningBox a {
-  background: purple;
   color: white;
+  min-width: 35%;
+}
+.runningBox {
+  width: 50%;
+  flex-grow: 2;
+  background-image: url(/img/runnertrack.jfif);
+  background-size: cover;
+  text-align: center;
+  border-radius: 10px;
+}
+.runningBox a {
+  margin-right: 10%;
+}
+.runningspan {
+  font-size: 40px;
 }
 .sixBox,
 .sevenBox,
 .eightBox,
 .mesaBox,
 .runningBox {
-  border: 1px solid black;
+  border: 6px solid white;
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
-  margin: 5%;
-  width: 10%;
+
+  margin: 4%;
+  width: 20%;
   font-family: "Baloo Tamma 2", cursive;
   font-size: 1.5em;
 }
 .classBoxes a {
-  margin-left: 25%;
+  margin-left: 5%;
   text-decoration: none;
+}
+.mesaBox a {
+  margin-left: 35%;
 }
 
 /* ***************6TH, 7TH, 8TH GRADE CLASSES PAGE  */
+
+/* 6th */
+.week,
+.essential {
+  color: white;
+  text-align: center;
+}
+header {
+  border-bottom: white 3px solid;
+  margin-bottom: 1%;
+}
+.week h2 {
+  font-size: 1.9em;
+}
+.essential h3 {
+  font-size: 1.3em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.phenomspan {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 1%;
+  margin-right: 90%;
+}
+.wholeBox {
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2%;
+  width: 95%;
+}
+.dayOne,
+.dayTwo,
+.dayThree,
+.dayFour,
+.dayFive {
+  padding: 1%;
+  width: 90%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+  text-align: center;
+  margin-top: 1%;
+  border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+.phenomContent {
+  padding: 1%;
+  display: flex;
+}
+.phenomQuestions {
+  text-align: start;
+  margin-left: 1%;
+}
+
+.dayThreePic {
+  margin-left: 35%;
+}
+.dayFivePic {
+  margin-left: 30%;
+}
+.dayThree h3,
+.dayOne h3,
+.dayTwo h3,
+.dayFour h3,
+.dayFive h3 {
+  border-bottom: 3px solid white;
+}
+.vocabSection {
+  margin-top: 3%;
+}
+.vocabSection,
+.challengeSection {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 10%;
+  width: 200%;
+  text-align: center;
+  line-height: 2.5em;
+  border: 1px solid rgba(255, 255, 255, 0.514);
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.rightSide {
+  margin-right: 20%;
+}
+.bothSides {
+  display: flex;
+  justify-content: space-evenly;
+}
+.challengeSection {
+  margin-top: 10%;
+}
+.sixTitle {
+  color: white;
+  text-align: center;
+}
+/*  */
+
+/* 7th 777777777777777777777 */
+
+.sevenBody {
+  background-image: url(../img/longfrog.jfif);
+  background-size: cover;
+}
+
+/* 8th!! 8 8 8 8 8  */
+.eightBody {
+  background-image: url(../img/darkswirl.jfif);
+  background-size: cover;
+}
 /* ***************6TH, 7TH, 8TH GRADE CLASSES PAGE  */
 
 /* *************** CLASSES PAGE  */
 .fas {
-  font-size: 40px;
+  font-size: 50px;
 }
 .runningBox span {
-  margin-left: 10%;
+  margin-left: 25%;
 }
 body {
-  background-image: url(/img/rocketship.jfif);
+  background-image: url(/img/thistlebutterfly.jfif);
   background-repeat: no-repeat;
   background-size: cover;
 }
 input {
   color: white;
 }
+#title {
+  color: black;
+}
+.sixBody {
+  background-image: url(/img/blueswirl.jfif);
+}
+
+/* MESA AND RUNNING CLUB  */
+.mesaBody {
+  background-image: url(../img/robohand.jfif);
+  background-size: cover;
+}
+.runningBody {
+  background-image: url(../img/runners.jfif);
+}
+/*  Styling for the Contact page */
+
+.contactBox {
+  border: 3px solid white;
+  text-align: center;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.329);
+
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  line-height: 1.5em;
+}
+.contactBox h2 {
+  border-bottom: 1px white solid;
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+.instaBox {
+  border: 3px solid white;
+  text-align: center;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.329);
+
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  line-height: 1.5em;
+  display: flex;
+}
+.instaBox h6 {
+  font-weight: 900;
+}
+.remindBox {
+  border: 3px solid white;
+  text-align: center;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.329);
+
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 10px;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.remindBox h6 {
+  font-weight: 900;
+}
+
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+/*  Breakpoints and Scaling  */
+@media (max-width: 950px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+  }
+
+  #introSection {
+    margin-top: 30%;
+  }
+  .bothSides {
+    display: flex;
+    flex-direction: column;
+  }
+  .vocabSection {
+    width: 80%;
+  }
+  .challengeSection {
+    width: 80%;
+    margin-bottom: 2%;
+  }
+  .phenomContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .sixTitle {
+    margin-top: 15%;
+  }
+  .contactBox {
+    margin-top: 25%;
+  }
+  .contactBox,
+  .instaBox,
+  .remindBox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 996px) {
+  nav img {
+    display: none;
+  }
+  #introSection img {
+    display: none;
+  }
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+  .classBoxes {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 900px) {
+  #introSection {
+    margin-top: 32%;
+  }
+  .lisignup {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 850px) {
+  #introSection {
+    margin-top: 34%;
+  }
+}
+@media (max-width: 800px) {
+  #introSection {
+    margin-top: 36%;
+  }
+  .classBoxes {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 700px) {
+  #introSection {
+    margin-top: 37%;
+  }
+  .classBoxes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 25%;
+  }
+}
+@media (max-width: 600px) {
+  #introSection {
+    margin-top: 41%;
+  }
+  .bottomLinks {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+  }
+  .boxOne {
+    margin-bottom: 20%;
+  }
+  .runningspan {
+    font-size: 1em;
+  }
+  .mesaSpan {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  #introSection {
+    margin-top: 44%;
+  }
+  .sixTitle {
+    margin-top: 22%;
+  }
+  .dayFivePic {
+    margin-left: 10%;
+  }
+  .dayThreePic {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 400px) {
+  #introSection {
+    margin-top: 54%;
+    margin-left: 1%;
+  }
+}
+
+/*  */

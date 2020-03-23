@@ -43,8 +43,8 @@ const setupGuides = data => {
       const guide = doc.data();
       const li = `
         <li>
-          <div class="collapsible-header amber lighten-2 "> ${guide.title} </div>
-          <div class="collapsible-body amber lighten-4"> ${guide.content} </div>
+          <div class="collapsible-header teal lighten-2 " "> ${guide.title} </div>
+          <div class="collapsible-body cyan lighten-4"> ${guide.content} </div>
         </li>
       `;
       html += li;

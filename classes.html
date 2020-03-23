@@ -2,75 +2,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Baloo+Tamma+2|Handlee|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/1f0d60c38a.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Acme|Baloo+Tamma+2|Handlee|Shadows+Into+Light&display=swap"
-      rel="stylesheet"
-    />
-    <title>Grades</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Classes</title>
   </head>
-  <body>
-    <header>
-      <img
-        src="https://pbs.twimg.com/profile_images/3436788556/91965a4638fdd94bbeabb3b14dfae9b5_400x400.jpeg"
-        alt="the logo for el sol science and arts Academy of santa ana"
-      />
-      <nav class=" z-depth-0 grey lighten-4">
-        <div class="nav-wrapper container">
-            <a href="#" class="brand-logo">
-                <img src="img/logo.svg" style="width: 180px; margin-top: 10px;">
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="logged-in" style="display: none;">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
-                </li>
-                <li class="logged-in" style="display: none;">
-                    <a href="#" class="grey-text" id="logout">Logout</a>
-                </li>
-                <li class="admin" style="display: none;">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
-                </li>
-                <li class="logged-out" style="display: none;">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
-                </li>
-                <li class="logged-out" style="display: none;">
-                    <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
-                </li>
-                </span>
-            </ul>
-        </div>
-    </nav>
-    </header>
+  <body class="classesPage">
+    
+      
+       <!-- NAVBAR -->
+
+   <nav class="main-nav z-depth-0 transparent" >
+    <a href="https://www.elsolacademy.org/" class="brand-logo">
+      <img src="img/main_el_sol_logo2.png" style="width: 280px; margin-top: 10px; margin-left: 10%;">
+    </a>
+    <div class="wrapper">
+    
+      <ul id="nav" class="nav navbar-nav">
+       
+        
+      
+        <li class="lihome">
+          <a href="/index.html" class="white-text">Home</a>
+        </li>
+        <li class="liclasses" >
+          <a href="/classes.html" class="white-text">Classes & Clubs</a>
+        </li>
+        <li class="licontact" >
+          <a href="/contact.html" class="white-text">Contact & Portfolio</a>
+        </li>
+          <li class="liaccount logged-in" style="display: none;">
+            <a href="#" class="white-text modal-trigger" data-target="modal-account">Account</a>
+          </li>
+          <li class="lilogout logged-in" style="display: none;">
+            <a href="#" class="white-text" id="logout">Logout</a>
+          </li>
+          <li class="linewblog admin" style="display: none;">
+            <a href="#" class="white-text modal-trigger" data-target="modal-create">New Blog Post</a>
+          </li>
+          <li class="lilogin logged-out" style="display: none;">
+            <a href="#" class="white-text modal-trigger" data-target="modal-login">Login</a>
+          </li>
+          <li class="lisignup logged-out" style="display: none;">
+            <a href="#" class="white-text modal-trigger" data-target="modal-signup">Sign up</a>
+          </li>
+        </span>
+      </ul>
+    </div>
+  </nav>
+    
     <div class="classBoxes">
       <div class="sixBox">
         <a href="./6th/sixthgrade.html"
-          >6th <br />
-          Grade</a
+          ><span class="sixspan">6th </span></a
         >
       </div>
       <div class="sevenBox">
         <a href="./7th/seventhgrade.html"
-          >7th <br />
-          Grade</a
+          ><span class="sevenspan">7th </sevenspan></a
         >
       </div>
       <div class="eightBox">
         <a href="./8th/eighthgrade.html"
-          >8th <br />
-          Grade</a
+          ><span class="eightspan">8th</span></a
         >
       </div>
-      <div class="mesaBox"><i class="fas fa-calculator"></i>
-        <a href="./mesa/mesa.html"> </i>MESA</a>
+      <div class="mesaBox">
+        <a href="./mesa/mesa.html"> </i><span class="mesaspan">MESA</span></a>
       </div>
       <div class="runningBox">
         <a href="./runningclub/runningclub.html"
-          ></i>Running Club</a
-        ><span><i class="fas fa-running"></i></span>
+          ><span class="runningspan">Running <br> Club</span></a
+        >
       </div>
     </div>
   </body>
